@@ -23,10 +23,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableTop="@drawable/btn_imc"
-                android:text="índice de Massa Corporea"
+                android:drawableTop="@drawable/imc_imagem"
+                android:text="índice de Massa Corporea (IMC)"
                 android:gravity="center"
-            ></TextView>
+            />
 
         </LinearLayout>
         <!-- Layout de dentro - Quadrados menores -->
@@ -35,7 +35,15 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:background="@color/verde"
-        ></LinearLayout>
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/vct_imagem"
+                android:text=" Valor Calórico Toral (VCT)"
+                android:gravity="center"/>
+        </LinearLayout>
 
     </LinearLayout>
 
