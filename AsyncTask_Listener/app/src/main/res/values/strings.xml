@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">AsyncTask_Listener</string>
     <string name="action_settings">Settings</string>
+    <string name="imc">índice de Massa Corporea (IMC)</string>
+    <string name="vct">Valor Calórico Toral (VCT)</string>
+    <string name="pa">Perfil Antropométrico (PA)</string>
+    <string name="calc_imc">Calcule seu IMC</string>
+    <string name="dig_peso">Seu peso</string>
+    <string name="dig_altura">Sua altura</string>
+    <string name="botaocalc">Calcular</string>
 </resources>

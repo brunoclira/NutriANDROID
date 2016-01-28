@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/imc_imagem"
-                android:text="índice de Massa Corporea (IMC)"
+                android:text="@string/imc"
                 android:gravity="center"
             />
 
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/vct_imagem"
-                android:text=" Valor Calórico Toral (VCT)"
+                android:text="@string/vct"
                 android:gravity="center"/>
         </LinearLayout>
 
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/pa_imagem"
                 android:gravity="center"
-                android:text="Perfil Antropométrico (PA)"/>
+                android:text="@string/pa"/>
         </LinearLayout>
 
     </LinearLayout>
