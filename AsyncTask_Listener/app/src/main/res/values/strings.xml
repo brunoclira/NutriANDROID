@@ -8,4 +8,5 @@
     <string name="dig_peso">Seu peso</string>
     <string name="dig_altura">Sua altura</string>
     <string name="botaocalc">Calcular</string>
+    <string name="botaolimpar">Limpar</string>
 </resources>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/amarelo"
+    android:background="@color/branco"
     android:gravity="center">
 
         <TextView
@@ -34,13 +34,13 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/EditTextAltura"/>
+            android:id="@+id/EditTextAltura" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center" >
 
         <Button
             android:layout_width="0dp"
@@ -48,8 +48,15 @@
             android:layout_weight="1"
             android:id="@+id/ButtonCalcular"
             android:text="@string/botaocalc"
-            android:background="@drawable/botao_calcular"
-            />
+            android:background="@drawable/botao_calcular" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ButtonLimpar"
+            android:text="@string/botaolimpar"
+            android:background="@drawable/botao_limpar"/>
     </LinearLayout>
 
 </LinearLayout>
