@@ -3,4 +3,5 @@
     <color name="amarelo">#FFFF00</color>
     <color name="verde">#00FF7F</color>
     <color name="azul">#1E90FF</color>
+    <color name="branco">#ffffff</color>
 </resources>
