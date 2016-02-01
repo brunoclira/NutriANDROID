@@ -26,7 +26,7 @@
                 android:drawableTop="@drawable/imc_imagem"
                 android:text="@string/imc"
                 android:gravity="center"
-            />
+                android:id="@+id/TextViewIMC"/>
 
         </LinearLayout>
         <!-- Layout de dentro - Quadrados menores -->
@@ -42,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/vct_imagem"
                 android:text="@string/vct"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:id="@+id/TextViewVCT"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -67,7 +68,8 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/pa_imagem"
                 android:gravity="center"
-                android:text="@string/pa"/>
+                android:text="@string/pa"
+                android:id="@+id/TextViewPA"/>
         </LinearLayout>
 
     </LinearLayout>

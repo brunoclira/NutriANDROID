@@ -1,5 +1,6 @@
-package ifpb.edu.br.asynctask_listener;
+package ifpb.edu.br.asynctask_listener.ifpb.edu.br.Nutri.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,13 +9,28 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import ifpb.edu.br.asynctask_listener.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView botaotelaIMC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+                botaotelaIMC = (TextView) findViewById(R.id.TextViewIMC);
+                botaotelaIMC.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                 public void onClick(View v){
+                    Intent telaIMC = new Intent(MainActivity.this,IMCActivity.class);
+                    startActivity(telaIMC);
+                }
+                });
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
