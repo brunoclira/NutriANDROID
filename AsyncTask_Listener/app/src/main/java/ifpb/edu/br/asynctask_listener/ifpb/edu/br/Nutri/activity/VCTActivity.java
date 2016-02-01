@@ -14,13 +14,14 @@ import ifpb.edu.br.asynctask_listener.ifpb.edu.br.Nutri.asynctask.ImcButtonAsync
 
 /**
  * Created by Bruno on 01/02/2016.
+ * Porém, preciso ajeitar pq copiei do outro de Imc
  */
-public class IMCActivity extends Activity {
+public class VCTActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_imc);
+        setContentView(R.layout.activity_vct);
 
         Button asyncTaskButton = (Button) findViewById(R.id.ButtonCalcular);
         asyncTaskButton.setOnClickListener(new View.OnClickListener() {
@@ -34,20 +35,20 @@ public class IMCActivity extends Activity {
                 String altura = alturaEditText.getText().toString();
 
                 JSONObject json = new JSONObject();
-                    try {
-                        json.put("peso", Float.parseFloat(peso));
-                        json.put("altura", Float.parseFloat(altura));
-                    } catch (NumberFormatException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    } catch (JSONException e) {
-                        // TODO Auto-generated catch block
-                        e.printStackTrace();
-                    }
+                try {
+                    json.put("peso", Float.parseFloat(peso));
+                    json.put("altura", Float.parseFloat(altura));
+                } catch (NumberFormatException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
 
-                ImcButtonAsyncTask imcAsyncTask = new ImcButtonAsyncTask(v.getContext());
+                VctButtonAsyncTask vctButtonAsyncTask = new VctButtonAsyncTask(v.getContext());
 
-                imcAsyncTask.execute(json.toString());
+                vctAsyncTask.execute(json.toString());
 
             }
         });

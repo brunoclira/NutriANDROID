@@ -92,6 +92,7 @@
             android:id="@+id/ButtonLimpar"
             android:text="@string/botaolimpar"
             android:background="@drawable/botao_limpar"/>
+
     </LinearLayout>
 
 </LinearLayout>
