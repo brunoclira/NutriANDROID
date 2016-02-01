@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    >
+    <!-- Layout de fora - Quadrado maior -->
+    <!--Teste Bruno-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <!-- Layout de dentro - Quadrados menores -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/amarelo"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/imc_imagem"
+                android:text="@string/imc"
+                android:gravity="center"
+                android:id="@+id/TextViewIMC"/>
+
+        </LinearLayout>
+        <!-- Layout de dentro - Quadrados menores -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/verde"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/vct_imagem"
+                android:text="@string/vct"
+                android:gravity="center"
+                android:id="@+id/TextViewVCT"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Layout de fora - Quadrado maior-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <!-- Layout de dentro - Quadrado de baixo maior -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/azul"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/pa_imagem"
+                android:gravity="center"
+                android:text="@string/pa"
+                android:id="@+id/TextViewPA"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

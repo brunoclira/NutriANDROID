@@ -6,12 +6,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import ifpb.edu.br.asynctask_listener.R;
+import ifpb.edu.br.asynctask_listener.ifpb.edu.br.Nutri.asynctask.ServerButtonAsyncTask;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +24,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+                Button statusButton = (Button)findViewById(R.id.severStatus);
+                statusButton.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        Log.i("MainActivity", "Clique no botão da AsyncTask");
+
+                        ServerButtonAsyncTask serverButtonAsyncTask =
+                                new ServerButtonAsyncTask(v.getContext());
+
+                        serverButtonAsyncTask.execute();
+
+                    }
+                });
+
+                //Mudar a página para a do IMC
                 botaotelaIMC = (TextView) findViewById(R.id.TextViewIMC);
                 botaotelaIMC.setOnClickListener(new View.OnClickListener(){
 
