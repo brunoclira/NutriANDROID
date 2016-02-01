@@ -9,4 +9,7 @@
     <string name="dig_altura">Sua altura</string>
     <string name="botaocalc">Calcular</string>
     <string name="botaolimpar">Limpar</string>
+    <string name="dig_nivelesporte">Nível do Esporte</string>
+    <string name="dig_entrevistado">Entrevistado</string>
+    <string name="dig_sexo">Sexo</string>
 </resources>
